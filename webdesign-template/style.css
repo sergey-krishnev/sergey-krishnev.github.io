@@ -88,11 +88,60 @@ nav{
 }
 .bottom-card{
 	background: #414146;
+	position: relative;
+	top: -30px;
 }
 .specialize-cards{
 	display: flex;
 	justify-content: space-between;
 }
+.portfolio{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio h4{
+	text-transform: uppercase;
+	background: #424147;
+	padding: 0px 8px;
+	display: inline-block;
+	color:#f5e10a;
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: normal;
+}
+.portfolio p{
+	color: #424146;
+	font-size: 16px;
+}
+.toggles button{
+	text-transform: uppercase;
+	border: none;
+	background: #fff;
+	color: #424146;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+}
+.toggles button:after{
+	content: ' / ';
+}
+.toggles button:last-child:after{
+	content: '';
+}
+.posts{
+	width: 90%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto auto auto auto;
+}
+body{
+	height: 4000px;
+}
+
+
+
+
 
 
 
@@ -140,5 +189,35 @@ nav{
 		position: relative;
 		top: 30px;
 		right: 115px;
+	}
+
+
+	.top-slide {
+    padding-top: 40px;
+    padding-bottom: 40px;
+	}
+	.top-slide h2{
+		font-size: 32px;
+	}
+	.top-slide p{
+		font-size: 16px;
+	}
+	.specialize-container p{
+		font-size: 16px;
+	}
+	.specialize-cards{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.bottom-card{
+		width: 250px;
+		margin: 0 auto;
+	}
+	.posts{
+		width: 90%;
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: auto;
 	}
 }
