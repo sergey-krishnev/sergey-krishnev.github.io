@@ -190,8 +190,11 @@ footer h4{
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 35% 35% 20%;
+	grid-template-columns: 35% 30% 30%;
 	grid-column-gap: 3%;
+}
+.footer-container p{
+	font-size: 13px;
 }
 .footer-container .about-us a{
 	background: #000;
@@ -207,7 +210,20 @@ footer h4{
 	margin-top: 10px;
 }
 .tweets p{
-	margin-top: 20px;
+	margin-top: 40px;
+	font-size: 13px;
+}
+.footer-container span{
+	color: #ffea00;
+}
+.contacts p{
+	display: flex;
+	margin-top: 40px;
+	font-size: 13px;
+}
+.contacts p img{
+	align-self: center;
+	margin-right: 15px;
 }
 
 
