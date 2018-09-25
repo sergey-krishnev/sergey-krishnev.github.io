@@ -11,3 +11,23 @@ $(function() {
 		$('.post').show(500);
 	});
 });
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+		nav:true,
+		loop:true,
+		responsiveClass:true,
+		responsive:{
+			420:{
+				items:3,
+				loop:true
+			},
+			421:{
+				items:8,
+				loop:true
+			}	
+	}
+	});
+});
+

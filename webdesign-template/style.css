@@ -135,14 +135,80 @@ nav{
 	margin: 0 auto;
 	grid-template-columns: auto auto auto auto;
 }
-body{
-	height: 4000px;
+.brand-slider{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
 }
-
-
-
-
-
+.brand-slider h4{
+	margin-top: 40px;
+	text-transform: uppercase;
+	background: #424147;
+	padding: 0px 8px;
+	display: inline-block;
+	color:#f5e10a;
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: normal;
+}
+.brand-slider p{
+	color: #424146;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+	position: absolute;
+	font-size: 60px;
+  color: #e3e3e3;
+  background-color: #000;
+  width: 50px;
+  height: 65px;
+  text-align: center;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+	align-items: center;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: -60px;
+  top: -5px;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: -60px;
+  top: -5px;
+}
+footer{
+	background: #414146;
+	padding: 30px 0;
+	color: #fff;
+}
+footer h4{
+	font-size: 18px;
+}
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 35% 35% 20%;
+	grid-column-gap: 3%;
+}
+.footer-container .about-us a{
+	background: #000;
+	color: #fff;
+	font-size: 15px;
+	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #ffea00;
+	display: inline-block;
+}
+.images{
+	margin-top: 10px;
+}
+.tweets p{
+	margin-top: 20px;
+}
 
 
 
