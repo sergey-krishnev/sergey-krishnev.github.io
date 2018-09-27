@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Playfair Display', serif;
+}
+header {
+	width: 100%;
+	background-color: #e6eff6;
+	display: flex;
+}
+.header-container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.header-container h2{
+	color: #000;
+	align-self: center;
+}
+.main-name{
+	background: url(img/will-bots-take-over-my-insurance-job-razm.jpg) no-repeat;
+	text-align: center;
+	padding: 200px 0 410px 0;
+	height: 1200px;
+}
+.main-name h1{
+	font-size: 60px;
+	font-weight: 900;
+	color:#000;
+}
+.mai-name p{
+	font-size: 40px;
+	font-weight: 400;
+}
