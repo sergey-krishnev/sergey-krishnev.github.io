@@ -7,6 +7,7 @@ body{
 }
 header {
 	width: 100%;
+	height: 120px;
 	background-color: #e6eff6;
 	display: flex;
 }
@@ -16,7 +17,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 }
+.header-container h2:first-child{
+	font-size: 80px;
+	align-self: center;
+}
 .header-container h2{
+	font-size: 30px;
 	color: #000;
 	align-self: center;
 }
