@@ -30,14 +30,57 @@ header {
 	background: url(img/will-bots-take-over-my-insurance-job-razm.jpg) no-repeat;
 	text-align: center;
 	padding: 200px 0 410px 0;
-	height: 1200px;
+	height: 380px;
 }
 .main-name h1{
 	font-size: 60px;
 	font-weight: 900;
 	color:#000;
 }
-.mai-name p{
-	font-size: 40px;
+.main-name p{
+	font-size: 20px;
 	font-weight: 400;
+}
+.portfolio{
+	text-align: center;
+	padding: 50px 0 50px 0;
+	height: 400px;
+}
+.portfolio h4{
+	font-size: 30px;
+}
+.toggles button{
+	text-transform: uppercase;
+	border: none;
+	background: #fff;
+	color: #424146;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+}
+.toggles button:after{
+	content: ' / ';
+}
+.toggles button:last-child:after{
+	content: '';
+}
+.posts{
+	width: 90%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: auto auto;
+}
+.posts img:hover{
+	opacity: 0.6;
+}
+.social{
+	background: #e6eff6;
+	display:flex;
+	justify-content: center;
+}
+.social img{
+	margin: 12px 0 12px 12px;
+}
+.social img:hover{
+	opacity: 0.6;
 }
