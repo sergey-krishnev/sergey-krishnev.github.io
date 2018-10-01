@@ -73,6 +73,26 @@ header {
 .posts img:hover{
 	opacity: 0.6;
 }
+
+#i-have-a-tooltip {
+	display: inline-block; /* Строчно-блочный элемент */
+	position: relative; /* Относительное позиционирование */
+ }
+#i-have-a-tooltip:hover::after {
+	content: attr(data-title); /* Выводим текст */
+	position: absolute; /* Абсолютное позиционирование */
+	left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+	z-index: 1; /* Отображаем подсказку поверх других элементов */
+	background: rgba(230,239,246,0.6); /* Полупрозрачный цвет фона */
+	color: #000; /* Цвет текста */
+	text-align: center; /* Выравнивание текста по центру */
+	font-size: 20px; /* Размер текста подсказки */
+	padding: 10px 5px; /* Поля */
+	margin-left: 85px;
+	margin-right: 85px;
+	border: 1px solid #333; /* Параметры рамки */
+ }
+
 .social{
 	background: #e6eff6;
 	display:flex;
