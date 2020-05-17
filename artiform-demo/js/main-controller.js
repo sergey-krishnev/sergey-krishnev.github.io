@@ -11,9 +11,9 @@ $( document ).ready(function() {
 function generateIfSubmit() {
     $('#generator-form').on("submit", function(event) {
         event.preventDefault();
-        var functorInTex = $("#functor-current-select img")[0].src.replace("http://latex.codecogs.com/gif.latex?","");
-        var relationInTex = $("#relation-current-select img")[0].src.replace("http://latex.codecogs.com/gif.latex?","");
-        var clazzInTex = $("#clazz-current-select img")[0].src.replace("http://latex.codecogs.com/gif.latex?","");
+        var functorInTex = $("#functor-current-select img")[0].src.replace("https://latex.codecogs.com/gif.latex?","");
+        var relationInTex = $("#relation-current-select img")[0].src.replace("https://latex.codecogs.com/gif.latex?","");
+        var clazzInTex = $("#clazz-current-select img")[0].src.replace("https://latex.codecogs.com/gif.latex?","");
         var tModelName = $( "#tmodel-selection option:selected" ).text();
         getTemplatesByTmodel(tModelName, functorInTex, relationInTex, clazzInTex);
         $('#exampleFormControlTextarea1').show();
@@ -62,7 +62,7 @@ function fillFunctorSelector() {
         var id = 0; 
         for (i = 3; i < array.length; i+=3) {
             text += '<button id="functor-item-'+ id +'" class="dropdown-item" onclick="clickFunctor('+ '\'' + id + '\'' +')" data-toggle="tooltip" title="'+ array[i+1].content.$t +' with properties: ' + array[i+2].content.$t
-            +'"><img src="http://latex.codecogs.com/gif.latex?'+ array[i].content.$t +'" border="0"/></button>';
+            +'"><img src="https://latex.codecogs.com/gif.latex?'+ array[i].content.$t +'" border="0"/></button>';
             id++;
           }
         $("#functor-selection").html(text);
@@ -77,7 +77,7 @@ function fillRelationSelector() {
         var id = 0; 
         for (i = 3; i < array.length; i+=3) {
             text += '<button id="relation-item-'+ id +'" class="dropdown-item" onclick="clickRelation('+ '\'' + id + '\'' +')" data-toggle="tooltip" title="'+ array[i+1].content.$t +' with properties: ' + array[i+2].content.$t
-            +'"><img src="http://latex.codecogs.com/gif.latex?' + array[i].content.$t + '" border="0"/></button>';
+            +'"><img src="https://latex.codecogs.com/gif.latex?' + array[i].content.$t + '" border="0"/></button>';
             id++;
           }
         $("#relation-selection").html(text);
@@ -92,7 +92,7 @@ function fillClazzSelector() {
         var id = 0; 
         for (i = 3; i < array.length; i+=3) {
             text += '<button id="clazz-item-'+ id +'" class="dropdown-item" onclick="clickClazz('+ '\'' + id + '\'' +')" data-toggle="tooltip" title="'+ array[i+1].content.$t +' with properties: ' + array[i+2].content.$t
-            +'"><img src="http://latex.codecogs.com/gif.latex?' + array[i].content.$t + '" border="0"/></button>';
+            +'"><img src="https://latex.codecogs.com/gif.latex?' + array[i].content.$t + '" border="0"/></button>';
             id++;
           }
         $("#clazz-selection").html(text);
